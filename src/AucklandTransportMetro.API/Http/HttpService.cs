@@ -13,7 +13,7 @@ namespace AucklandTransportMetro.Http
 
         protected HttpService(Uri baseUri)
         {
-            if (baseUri?.IsAbsoluteUri ?? false)
+            if (!(baseUri?.IsAbsoluteUri ?? false))
             {
                 throw new ArgumentException("Base request url must be an absolute URI.", nameof(baseUri));
             }

@@ -24,7 +24,7 @@ namespace AucklandTransportMetro.Stops
             return Observable.Create<Stop>(
                 async (observer, cancellationToken) =>
                 {
-                    var stops = await GetAsync<Stop>(new Uri("/"));
+                    var stops = await GetAsync<Stop>(new Uri(String.Empty, UriKind.Relative));
 
                     foreach (var stop in stops)
                     {

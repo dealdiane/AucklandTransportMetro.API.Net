@@ -13,7 +13,7 @@ namespace AucklandTransportMetro.APITests
 
         public StopUnitTests()
         {
-            TestConfiguration.Configuration.GetSection("Settings:Appium").Bind(_settings = new ApiSettings());
+            TestConfiguration.Configuration.GetSection("Settings").Bind(_settings = new ApiSettings());
         }
 
         [Fact]

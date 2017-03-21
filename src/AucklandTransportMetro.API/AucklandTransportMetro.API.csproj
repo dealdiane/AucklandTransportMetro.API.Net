@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Trips\" />
+    <Compile Remove="Trips\**" />
+    <EmbeddedResource Remove="Trips\**" />
+    <None Remove="Trips\**" />
   </ItemGroup>
 
   <ItemGroup>
